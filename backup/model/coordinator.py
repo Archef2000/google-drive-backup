@@ -180,8 +180,8 @@ class Coordinator(Trigger):
        #     self._global_info.setSkipSpaceCheckOnce(False)
        # except BaseException as e:
        #     self.handleError(e)
-       # finally:
-       #     self._updateFreshness()
+        finally:
+            self._updateFreshness()
 
     def handleError(self, e):
         if isinstance(e, CancelledError):
