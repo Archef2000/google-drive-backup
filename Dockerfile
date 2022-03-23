@@ -1,6 +1,6 @@
 #ARG BUILD_FROM
 #FROM $BUILD_FROM
-FROM python:3.9-buster
+FROM python:3.9-alpine
 WORKDIR /app
 COPY . /app
 RUN chmod +x addon_deps.sh
