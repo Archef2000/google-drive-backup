@@ -168,19 +168,20 @@ class Coordinator(Trigger):
 
     async def _sync(self):
         try:
-            self._sync_start.set()
-            await self._sync_wait.wait()
-            logger.info("Syncing Backups")
-            self._global_info.sync()
-            self._estimator.refresh()
-            await self._buildModel().sync(self._time.now())
-            self._global_info.success()
-            self._backoff.reset()
-            self._global_info.setSkipSpaceCheckOnce(False)
-        except BaseException as e:
-            self.handleError(e)
-        finally:
-            self._updateFreshness()
+            print("Hello")
+       #     self._sync_start.set()
+       #     await self._sync_wait.wait()
+       #     logger.info("Syncing Backups")
+       #     self._global_info.sync()
+       #     self._estimator.refresh()
+       #     await self._buildModel().sync(self._time.now())
+       #     self._global_info.success()
+       #     self._backoff.reset()
+       #     self._global_info.setSkipSpaceCheckOnce(False)
+       # except BaseException as e:
+       #     self.handleError(e)
+       # finally:
+       #     self._updateFreshness()
 
     def handleError(self, e):
         if isinstance(e, CancelledError):
