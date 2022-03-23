@@ -7,6 +7,8 @@ RUN chmod +x addon_deps.sh
 RUN apk add bash
 RUN bash addon_deps.sh
 RUN pip3 install .
+RUN mkdir /backup && mkdir /data
+COPY options.json /data/options.json
 COPY config.json /usr/local/lib/python3.8/site-packages/config.json
 
 EXPOSE 1627
