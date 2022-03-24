@@ -4,4 +4,5 @@
   "days_between_backups": 3.0,
   "send_error_reports": false,
   "expose_extra_server": true
+  "enable_backup_stale_sensor": false
 }
