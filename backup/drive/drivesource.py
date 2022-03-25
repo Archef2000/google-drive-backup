@@ -27,7 +27,7 @@ logger = getLogger(__name__)
 MIME_TYPE = "application/tar"
 THUMBNAIL_MIME_TYPE = "image/png"
 FOLDER_MIME_TYPE = 'application/vnd.google-apps.folder'
-FOLDER_NAME = 'Home Assistant Backups'
+FOLDER_NAME = 'Docker Backups'
 FOLDER_CACHE_SECONDS = 30
 
 
