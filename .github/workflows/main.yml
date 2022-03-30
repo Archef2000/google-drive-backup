@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: whoan/docker-build-with-cache-action@v5
+    - uses: satackey/action-docker-layer-caching@v0.0.11
+      continue-on-error: true
     - name: docker login
       run: |
         echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username ${{ secrets.DOCKER_USER }} --password-stdin  
