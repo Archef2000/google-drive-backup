@@ -1,0 +1,11 @@
+gdrive
+4000  1627
+
+archef2000/google-drive-backup:latest
+
+/home/pi/gdrive/data	/data
+/usr/share/hassio/ssl	/ssl
+/usr/share/hassio/homeassistant	/config
+/dev	/dev
+/home/pi/gdrive/backup	/app/backup
+/usr/share/hassio/backup	/backup
