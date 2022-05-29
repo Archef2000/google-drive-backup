@@ -1,8 +1,8 @@
 name: Docker Google Drive Backup
 
 on:
-  schedule:
-    - cron:  '0 0 * * 5'
+#  schedule:
+#    - cron:  '0 0 * * 5'
   workflow_dispatch:
 
 jobs:
